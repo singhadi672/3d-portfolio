@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="text-white top-0 left-0 w-full py-3 px-3 backdrop-blur-lg" style={{ zIndex: 22 }}>
             <hr className='border-2 border-gray-100' />
             <div className='flex justify-between items-center flex-row-reverse relative pb-8 w-full'>
-                <div className="absolute lg:-left-7 lg:top-6 -top-1 -left-3 w-[5.5rem] lg:w-auto" onClick={() => navigate('/')}>
+                <div className="absolute lg:-left-7 lg:top-6 top-2 -left-3 w-[5.5rem] lg:w-auto" onClick={() => navigate('/')}>
                     <ImageKitWrapper path={"/portfolio_logo_colour.svg"} width={150} />
                 </div>
                 <div className='lg:mt-12 mt-3 flex justify-between items-center text-w'>
