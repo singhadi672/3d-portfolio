@@ -12,7 +12,7 @@ export default function Balloon({ isRotating, ...props }) {
         if (isRotating) {
             ref.current.position.y += 0.5
         } else {
-            ref.current.position.y = -3
+            ref.current.position.y = -4
 
         }
     }, [isRotating, actions])

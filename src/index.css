@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.info_box {
+    background: #657695;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    width: 95%;
+    height: 90%
+}
+
+.info_box_shadow {
+    color: white;
+    background: #0F1B30;
+    position: relative;
+}
+
+.text-w {
+    color: white;
+}
+
+.text-rundown {
+    font-size: 0.9rem !important;
+    font-weight: 300 !important;
+    color: #657695 !important
+}
+
+.bg_gradient {
+    /* background-image: linear-gradient(45deg, #0F1B30, #4AA2B2, #2F7BA5) */
+    animation: animate_gradient 3s linear infinite alternate;
+}
+
+.bg_gradient_anti {
+    background-image: linear-gradient(-45deg, #0F1B30, #4AA2B2, #2F7BA5)
+}
+
+@keyframes animate_gradient {
+
+    0% {
+        background-image: linear-gradient(45deg, #0F1B30, #4AA2B2, #2F7BA5)
+    }
+
+    25% {
+        background-image: linear-gradient(30deg, #0F1B30, #4AA2B2, #2F7BA5)
+    }
+
+    50% {
+        background-image: linear-gradient(0deg, #0F1B30, #4AA2B2, #2F7BA5)
+    }
+
+    75% {
+        background-image: linear-gradient(-30deg, #0F1B30, #4AA2B2, #2F7BA5)
+    }
+
+    100% {
+        background-image: linear-gradient(-45deg, #0F1B30, #4AA2B2, #2F7BA5)
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .text-rundown {
+        font-size: 0.8rem !important;
+
+    }
+}
